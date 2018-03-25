@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>CAFE COFFEE DAY</title>
+        <meta charset="UTF-8">
+		<link rel="manifest" href="manifest.json">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+	<script>
+function validateForm() {
+    var x = document.forms["book"]["nam"].value;
+    if (x == "") {
+        alert("Name must be filled out");
+        return false;
+}
+   }
+function validateForm() {
+var y = document.forms["book"]["mob"].value;
+    if (y == "") {
+        alert("Contact_No must be filled out");
+        return false;
+}
+}
+</script>
+    <body style='background-image: url(1.jpg)'>
+        <form name="book" id="book" method="post" action="1.html" onsubmit="return validateForm()">
+            <h2 align='center'>ORDERING FORM</h2>
+            <br>
+            <table align="center">
+               
+                <tr><td>NAME:</td><td><input name="name" id="nam" type="text" required/></td></tr>
+                 <tr><td>MOBILE NO:</td><td><input id="mob" name="mob" type="number" /></td></tr>
+                  <tr><td>MAIL ID:</td><td><input type="text"/></td></tr>
+                  <tr><td>ADDRESS:</td><td><textarea></textarea></td></tr>
+                  <tr><td>CAFE MENU:</td><td>
+                          <select name="menu" >
+                              <option value="a">Cappuccino-$10</option>
+                               <option value="b">Espresso-$15</option>
+                                <option value="c">Cafe Latte-$13</option>
+                          </select></td><tr>
+                   <tr><td>COMBOS:</td><td>
+                          <select name="combo">
+                              <option value="a"> Iced Tea / Iced Coffee + Non-Veg Sandwich combo </option>
+                               <option value="b">Cappuccino / Hot Tea** + Non-Veg Sandwich combo </option>
+                                <option value="c"> Flavored Cappuccino + Hazelnut Karat</option>
+                          </select></td><tr> 
+                   <tr><td>PAYMENT MODE:</td><td>
+                             <input type="radio"> Cash On Delivery<br>
+                             <input type="radio">  Credit/Debit Card<br>
+                               <input type="radio"> Net Banking
+                        </td><tr>    
+                       
+            </table>
+            <h2 align='center'>  <input type="submit" value='PROCEED'></h2>
+        </form>
+		<script type="text/javascript" src="sss.js"></script>
+    </body>
+</html>
